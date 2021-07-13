@@ -1,1 +1,1 @@
-FROM gcr.io/viant-images/actions/golang:1.10
+FROM gcr.io/viant-images/actions/golang:1.11

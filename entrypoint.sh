@@ -2,10 +2,12 @@
 
 set -e
 
+GITHUB_SERVER="${GITHUB_SERVER_URL#https://}"
+
 if [ -z "${IMPORT}" ]; then
   IMPORT="${GITHUB_REPOSITORY}"
 fi
-WORKDIR="${GOPATH}/src/github.com/${IMPORT}"
+WORKDIR="${GOPATH}/src/$GITHUB_SERVER/${IMPORT}"
 
 # PROJECT_PATH specifies the subdirectory in the working directory that the Go project is
 if [ -z "${PROJECT_PATH}" ]; then

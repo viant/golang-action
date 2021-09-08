@@ -16,6 +16,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Test
+        run: |
+          docker run hello-world
+
       - name: Extract metadata for Docker
         id: meta
         uses: docker/metadata-action@v3

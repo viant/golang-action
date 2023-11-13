@@ -1,4 +1,4 @@
-FROM golang:1.21
+FROM golang:1.21.4-bullseye
 
 RUN curl -sSL "https://github.com/gotestyourself/gotestsum/releases/download/v1.6.4/gotestsum_1.6.4_linux_amd64.tar.gz" | \
 	tar -xz -C /usr/local/bin gotestsum
